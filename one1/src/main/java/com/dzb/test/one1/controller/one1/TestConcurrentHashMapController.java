@@ -1,8 +1,9 @@
-package com.dzb.test.one1.controller;
+package com.dzb.test.one1.controller.one1;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import java.util.UUID;
@@ -22,6 +23,7 @@ import java.util.stream.LongStream;
  * @createTime 2020年03月13日 10:15:00
  */
 @RestController
+@RequestMapping("hashMap/*")
 public class TestConcurrentHashMapController {
 
     private static Logger log = LoggerFactory.getLogger(TestConcurrentHashMapController.class);

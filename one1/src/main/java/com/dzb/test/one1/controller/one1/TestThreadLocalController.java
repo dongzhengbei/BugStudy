@@ -1,6 +1,7 @@
-package com.dzb.test.one1.controller;
+package com.dzb.test.one1.controller.one1;
 
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -15,6 +16,7 @@ import java.util.Map;
  * @createTime 2020年03月13日 09:44:00
  */
 @RestController
+@RequestMapping("thread/*")
 public class TestThreadLocalController {
 
     private ThreadLocal<Integer> currentUser = ThreadLocal.withInitial(()->null);
